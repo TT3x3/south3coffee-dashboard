@@ -235,7 +235,7 @@ const AdminHome = () => {
                     ) : (
                       newOrders.map((order) => (
                         <tr key={order.id}>
-                          <td className="orders-custom-tbody-th">
+                          <td className="orders-custom-tbody-th edit-th">
                             <div className="edit-icon">
                               <img src={images.editIcon} alt="edit icon" />
                             </div>
