@@ -57,12 +57,12 @@ const AdminLogin = () => {
       clearInputs();
       return;
     } else if (!accountRegex.test(account) || account.length > 100) {
-      setModalMsg('管理者不存在或密碼輸入錯誤');
+      setModalMsg('使用者不存在或密碼輸入錯誤');
       setIsOpen(true);
       clearInputs();
       return;
     } else if (!passwordRegex.test(password)) {
-      setModalMsg('管理者不存在或密碼輸入錯誤');
+      setModalMsg('使用者不存在或密碼輸入錯誤');
       setIsOpen(true);
       clearInputs();
       return;
@@ -79,7 +79,7 @@ const AdminLogin = () => {
         const role = res.data.data.user.role;
 
         if (role !== 'ADMIN') {
-          setModalMsg('無權限進入後臺管理中心');
+          setModalMsg('使用者不存在或密碼輸入錯誤');
           setIsOpen(true);
           clearInputs();
           return;
