@@ -32,7 +32,7 @@ const AdminSidebar = ({ children }) => {
 
 
   const sidebarItems = [
-    { title: '會員中心', path: '/admin' },
+    { title: '管理中心', path: '/admin' },
     { title: '訂單管理', path: '/admin/orders' },
     { title: '商品管理', path: '/admin/products' },
     { title: '數據中心', path: '/admin/data_center' },
@@ -42,7 +42,6 @@ const AdminSidebar = ({ children }) => {
   // 登出
   const handleLogout = () => {
     dispatch(logout());
-    // window.location.href = 'https://south3group.github.io/south3coffee/login';
     navigate('/login');
   };
 
